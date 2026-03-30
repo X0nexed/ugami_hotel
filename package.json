@@ -1,0 +1,29 @@
+{
+  "name": "ugami_hotel",
+  "version": "1.0.0",
+  "description": "Веб-сайт (лэндинг) для базы отдыха **«Югами»**, расположенной в Грибовке (Одесская область). Проект демонстрирует инфраструктуру отеля, меню ресторана и геолокацию.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/X0nexed/ugami_hotel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/X0nexed/ugami_hotel/issues"
+  },
+  "homepage": "https://github.com/X0nexed/ugami_hotel#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "vite": "^8.0.3"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.2"
+  }
+}
