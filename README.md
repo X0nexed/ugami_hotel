@@ -7,9 +7,9 @@
 * **Меню ресторана:** Список блюд европейской и одесской кухни (гриль-меню, морепродукты, комплексные обеды).
 * **Инфраструктура:** Описание бассейна, зоны барбекю и прямого выхода к морю.
 
-## Технологии (адаптируй под свой стек)
-* **Frontend:** HTML5, CSS3 (Flexbox/Grid), JavaScript.
-* **Maps:** Google Maps API / Leaflet.
+## Технологии
+* **Frontend:** HTML5, Tailwind, JavaScript.
+* **Maps:** Google Maps API.
 * **Deployment:** GitHub Pages.
 
 ## Контакты отеля
