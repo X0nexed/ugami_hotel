@@ -21,7 +21,7 @@
 
 ## 🛠 Технологии
 * **Frontend:** HTML5, Tailwind CSS, JavaScript.
-* **Maps:** Google Maps API / iframe.
+* **Maps:** Google Maps / iframe.
 * **Deployment:** GitHub Pages.
 
 ## 📍 Контакты отеля
