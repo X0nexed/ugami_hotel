@@ -8,7 +8,7 @@
     Проект демонстрирует инфраструктуру отеля, меню ресторана и геолокацию.
   </p>
 
-  <a href="https://ugamy.com.ua">
+  <a href="Hotelugamy.fun">
     <img src="https://img.shields.io/badge/Live_Site-ugamy.com.ua-0052CC?style=for-the-badge" alt="Live Demo" />
   </a>
   <br><br>
