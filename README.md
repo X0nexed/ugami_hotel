@@ -9,7 +9,7 @@
   </p>
 
   <a href="Hotelugamy.fun">
-    <img src="https://img.shields.io/badge/Live_Site-ugamy.com.ua-0052CC?style=for-the-badge" alt="Live Demo" />
+    <img src="https://img.shields.io/badge/Hotelugamy.fun-0052CC?style=for-the-badge" alt="Live Demo" />
   </a>
   <br><br>
 </div>
