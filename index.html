@@ -17,11 +17,11 @@
 
 <nav class="bg-white border-b border-gray-200 shadow-sm relative z-40">
     <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center h-24">
+        <div class="flex justify-between items-center h-20 md:h-24">
 
-            <a href="#" class="flex items-center gap-4">
-                <img src="/icon.jpg" alt="Югами" class="w-20 h-20 object-contain">
-                <span class="font-bold text-2xl text-blue-900 tracking-widest uppercase">Югами</span>
+            <a href="#" class="flex items-center gap-2 md:gap-4">
+                <img src="/icon.jpg" alt="Югами" class="w-16 h-16 md:w-20 md:h-20 object-contain">
+                <span class="font-bold text-xl md:text-2xl text-blue-900 tracking-widest uppercase">Югами</span>
             </a>
 
             <button id="navbar-toggle" class="flex items-center gap-2 p-2 text-gray-800 hover:text-blue-600 transition-colors focus:outline-none group">
@@ -35,25 +35,25 @@
     </div>
 </nav>
 
-<header class="relative h-screen flex items-center justify-center -mt-24 pt-24 overflow-hidden">
+<header class="relative min-h-[100svh] flex items-center justify-center -mt-20 md:-mt-24 pt-20 md:pt-24 overflow-hidden">
     <div class="absolute inset-0 z-0 bg-gray-900">
         <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=2080&auto=format&fit=crop" alt="Югами Резорт" class="w-full h-full object-cover opacity-60">
     </div>
-    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
-        <h1 class="text-5xl md:text-7xl font-bold text-white tracking-wider uppercase mb-6 drop-shadow-lg">Югами</h1>
-        <p class="text-xl md:text-2xl text-white/90 font-light mb-10 tracking-wide drop-shadow-md">Сучасний відпочинок біля моря у Грибівці</p>
-        <a href="#rooms" class="inline-block bg-white text-blue-900 font-bold tracking-widest uppercase text-sm px-10 py-4 hover:bg-blue-900 hover:text-white transition-colors duration-300">
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-10 md:mt-16">
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-wider uppercase mb-4 md:mb-6 drop-shadow-lg">Югами</h1>
+        <p class="text-lg sm:text-xl md:text-2xl text-white/90 font-light mb-8 md:mb-10 tracking-wide drop-shadow-md">Сучасний відпочинок біля моря у Грибівці</p>
+        <a href="#rooms" class="inline-block bg-white text-blue-900 font-bold tracking-widest uppercase text-xs md:text-sm px-8 md:px-10 py-4 hover:bg-blue-900 hover:text-white transition-colors duration-300">
             Переглянути номери
         </a>
     </div>
 </header>
 
 <!-- About Section -->
-<section id="about" class="py-24 bg-white">
+<section id="about" class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4 max-w-6xl">
-        <div class="flex flex-col md:flex-row gap-16 items-center">
+        <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-center">
             <div class="w-full md:w-1/2">
-                <h2 class="text-3xl font-light text-blue-900 mb-6 uppercase tracking-widest">Про нас</h2>
+                <h2 class="text-2xl md:text-3xl font-light text-blue-900 mb-6 uppercase tracking-widest">Про нас</h2>
                 <div class="space-y-4 text-gray-600 font-light leading-relaxed">
                     <p>Двоповерхова будівля бази відпочинку збудована за проєктом, що втілює сучасний підхід до дизайнерського оформлення. База відпочинку "Югами" орієнтована на надання послуг для комфортного відпочинку біля моря, сімейного відпочинку, відпочинку з дітьми.</p>
                     <p>На території курорту Грибівка ми пропонуємо басейн 14х4 м з підігрівом, де працює бар. В готелі все обладнання нове, внутрішнє та зовнішнє оформлення виконане в європейському стилі.</p>
@@ -67,13 +67,13 @@
     </div>
 </section>
 
-<section id="services" class="py-24 bg-gray-50 border-t border-b border-gray-200">
+<section id="services" class="py-16 md:py-24 bg-gray-50 border-t border-b border-gray-200">
     <div class="container mx-auto px-4 max-w-6xl">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-light text-blue-900 uppercase tracking-widest">Інфраструктура & Сервіс</h2>
+        <div class="text-center mb-10 md:mb-16">
+            <h2 class="text-2xl md:text-3xl font-light text-blue-900 uppercase tracking-widest">Інфраструктура & Сервіс</h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             <!-- 1 Картка: Басейни -->
             <div class="bg-white shadow-sm flex flex-col overflow-hidden group">
                 <div class="relative h-56 group/slider">
@@ -97,10 +97,10 @@
                             </div>
                         </div>
                     </div>
-                    <button onclick="document.getElementById('slider-1').scrollBy({left: -300, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none">
+                    <button onclick="document.getElementById('slider-1').scrollBy({left: -300, behavior: 'smooth'})" class="hidden md:block absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                     </button>
-                    <button onclick="document.getElementById('slider-1').scrollBy({left: 300, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none">
+                    <button onclick="document.getElementById('slider-1').scrollBy({left: 300, behavior: 'smooth'})" class="hidden md:block absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </button>
                     <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1 pointer-events-none">
@@ -136,10 +136,10 @@
                             </div>
                         </div>
                     </div>
-                    <button onclick="document.getElementById('slider-2').scrollBy({left: -300, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none">
+                    <button onclick="document.getElementById('slider-2').scrollBy({left: -300, behavior: 'smooth'})" class="hidden md:block absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                     </button>
-                    <button onclick="document.getElementById('slider-2').scrollBy({left: 300, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none">
+                    <button onclick="document.getElementById('slider-2').scrollBy({left: 300, behavior: 'smooth'})" class="hidden md:block absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </button>
                     <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1 pointer-events-none">
@@ -174,10 +174,10 @@
                             </div>
                         </div>
                     </div>
-                    <button onclick="document.getElementById('slider-3').scrollBy({left: -300, behavior: 'smooth'})" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none">
+                    <button onclick="document.getElementById('slider-3').scrollBy({left: -300, behavior: 'smooth'})" class="hidden md:block absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                     </button>
-                    <button onclick="document.getElementById('slider-3').scrollBy({left: 300, behavior: 'smooth'})" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none">
+                    <button onclick="document.getElementById('slider-3').scrollBy({left: 300, behavior: 'smooth'})" class="hidden md:block absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </button>
                     <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1 pointer-events-none">
@@ -199,43 +199,142 @@
     </div>
 </section>
 
-<section id="rooms" class="py-24 bg-white">
+<section id="rooms" class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4 max-w-6xl">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-light text-blue-900 uppercase tracking-widest mb-4">Наші номери</h2>
-            <p class="text-gray-500 max-w-2xl mx-auto font-light">Просторі, світлі кімнати підвищеного комфорту. Стильний інтер'єр та ретельно підібрані меблі створюють атмосферу затишку.</p>
+        <div class="text-center mb-10 md:mb-16">
+            <h2 class="text-2xl md:text-3xl font-light text-blue-900 uppercase tracking-widest mb-4">Наші номери</h2>
+            <p class="text-sm md:text-base text-gray-500 max-w-2xl mx-auto font-light">Просторі, світлі кімнати підвищеного комфорту. Стильний інтер'єр та ретельно підібрані меблі створюють атмосферу затишку.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div class="group cursor-pointer relative overflow-hidden bg-gray-100">
-                <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" alt="2-х місний номер">
-                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                    <h3 class="text-2xl text-white font-medium tracking-wider">2-х місний номер</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 mb-10 md:mb-16">
+            <!-- 2-місний номер -->
+            <div class="relative overflow-hidden bg-gray-100 w-full group/slider shadow-sm rounded-sm">
+                <div id="room-slider-1" class="flex overflow-x-auto snap-x snap-mandatory h-64 md:h-80 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                    <div class="min-w-full h-full snap-center cursor-pointer group/img relative" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop" alt="2-х місний номер" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                        </div>
+                    </div>
+                    <div class="min-w-full h-full snap-center cursor-pointer group/img relative" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=2070&auto=format&fit=crop" alt="2-х місний номер 2" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="document.getElementById('room-slider-1').scrollBy({left: -300, behavior: 'smooth'})" class="hidden md:block absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none z-10">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button onclick="document.getElementById('room-slider-1').scrollBy({left: 300, behavior: 'smooth'})" class="hidden md:block absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none z-10">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 md:p-6 pointer-events-none flex justify-between items-end">
+                    <h3 class="text-xl md:text-2xl text-white font-medium tracking-wider">2-х місний номер</h3>
+                    <div class="flex gap-1.5 mb-1.5">
+                        <div class="w-1.5 h-1.5 rounded-full bg-white shadow"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-white shadow"></div>
+                    </div>
                 </div>
             </div>
-            <div class="group cursor-pointer relative overflow-hidden bg-gray-100">
-                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1974&auto=format&fit=crop" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" alt="3-х місний номер">
-                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                    <h3 class="text-2xl text-white font-medium tracking-wider">3-х місний номер</h3>
+
+            <!-- 3-місний номер -->
+            <div class="relative overflow-hidden bg-gray-100 w-full group/slider shadow-sm rounded-sm">
+                <div id="room-slider-2" class="flex overflow-x-auto snap-x snap-mandatory h-64 md:h-80 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                    <div class="min-w-full h-full snap-center cursor-pointer group/img relative" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1974&auto=format&fit=crop" alt="3-х місний номер" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                        </div>
+                    </div>
+                    <div class="min-w-full h-full snap-center cursor-pointer group/img relative" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop" alt="3-х місний номер 2" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="document.getElementById('room-slider-2').scrollBy({left: -300, behavior: 'smooth'})" class="hidden md:block absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none z-10">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button onclick="document.getElementById('room-slider-2').scrollBy({left: 300, behavior: 'smooth'})" class="hidden md:block absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none z-10">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 md:p-6 pointer-events-none flex justify-between items-end">
+                    <h3 class="text-xl md:text-2xl text-white font-medium tracking-wider">3-х місний номер</h3>
+                    <div class="flex gap-1.5 mb-1.5">
+                        <div class="w-1.5 h-1.5 rounded-full bg-white shadow"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-white shadow"></div>
+                    </div>
                 </div>
             </div>
-            <div class="group cursor-pointer relative overflow-hidden bg-gray-100">
-                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" alt="4-х місний номер">
-                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                    <h3 class="text-2xl text-white font-medium tracking-wider">4-х місний номер</h3>
+
+            <!-- 4-місний номер -->
+            <div class="relative overflow-hidden bg-gray-100 w-full group/slider shadow-sm rounded-sm">
+                <div id="room-slider-3" class="flex overflow-x-auto snap-x snap-mandatory h-64 md:h-80 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                    <div class="min-w-full h-full snap-center cursor-pointer group/img relative" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop" alt="4-х місний номер" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                        </div>
+                    </div>
+                    <div class="min-w-full h-full snap-center cursor-pointer group/img relative" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=2070&auto=format&fit=crop" alt="4-х місний номер 2" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="document.getElementById('room-slider-3').scrollBy({left: -300, behavior: 'smooth'})" class="hidden md:block absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none z-10">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button onclick="document.getElementById('room-slider-3').scrollBy({left: 300, behavior: 'smooth'})" class="hidden md:block absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none z-10">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 md:p-6 pointer-events-none flex justify-between items-end">
+                    <h3 class="text-xl md:text-2xl text-white font-medium tracking-wider">4-х місний номер</h3>
+                    <div class="flex gap-1.5 mb-1.5">
+                        <div class="w-1.5 h-1.5 rounded-full bg-white shadow"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-white shadow"></div>
+                    </div>
                 </div>
             </div>
-            <div class="group cursor-pointer relative overflow-hidden bg-gray-100">
-                <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1974&auto=format&fit=crop" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" alt="5-х місний номер">
-                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                    <h3 class="text-2xl text-white font-medium tracking-wider">5-х місний номер</h3>
+
+            <!-- 5-місний номер -->
+            <div class="relative overflow-hidden bg-gray-100 w-full group/slider shadow-sm rounded-sm">
+                <div id="room-slider-4" class="flex overflow-x-auto snap-x snap-mandatory h-64 md:h-80 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                    <div class="min-w-full h-full snap-center cursor-pointer group/img relative" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1974&auto=format&fit=crop" alt="5-х місний номер" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                        </div>
+                    </div>
+                    <div class="min-w-full h-full snap-center cursor-pointer group/img relative" onclick="openLightbox(this.querySelector('img').src)">
+                        <img src="https://images.unsplash.com/photo-1584132869994-aa7150fb7d3a?q=80&w=2070&auto=format&fit=crop" alt="5-х місний номер 2" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="document.getElementById('room-slider-4').scrollBy({left: -300, behavior: 'smooth'})" class="hidden md:block absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none z-10">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button onclick="document.getElementById('room-slider-4').scrollBy({left: 300, behavior: 'smooth'})" class="hidden md:block absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none z-10">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 md:p-6 pointer-events-none flex justify-between items-end">
+                    <h3 class="text-xl md:text-2xl text-white font-medium tracking-wider">5-х місний номер</h3>
+                    <div class="flex gap-1.5 mb-1.5">
+                        <div class="w-1.5 h-1.5 rounded-full bg-white shadow"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-white shadow"></div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="bg-blue-50 p-8 md:p-12">
-            <h3 class="text-xl font-medium text-blue-900 mb-6 uppercase tracking-wider text-center">Комплектація кожного номера:</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8 text-gray-700 font-light">
+        <div class="bg-blue-50 p-6 md:p-12">
+            <h3 class="text-lg md:text-xl font-medium text-blue-900 mb-6 uppercase tracking-wider text-center">Комплектація кожного номера:</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-6 md:gap-x-8 text-sm md:text-base text-gray-700 font-light">
                 <ul class="space-y-2 list-disc list-inside">
                     <li>Гардеробна / прихожа</li>
                     <li>Кімната для відпочинку</li>
@@ -276,16 +375,16 @@
 </section>
 
 <!-- Footer / Contacts -->
-<footer id="contacts" class="bg-gray-900 text-white py-16">
+<footer id="contacts" class="bg-gray-900 text-white py-12 md:py-16">
     <div class="container mx-auto px-4 max-w-6xl">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 text-center md:text-left">
 
-            <div>
-                <a href="#" class="inline-flex items-center gap-4 mb-6">
-                    <div class="w-20 h-20 rounded-full overflow-hidden shadow-sm flex items-center justify-center flex-shrink-0">
+            <div class="flex flex-col items-center md:items-start">
+                <a href="#" class="inline-flex items-center gap-4 mb-4 md:mb-6">
+                    <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden shadow-sm flex items-center justify-center flex-shrink-0">
                         <img src="/icon.jpg" alt="Югами" class="w-full h-full object-cover scale-[1.445]">
                     </div>
-                    <span class="font-bold text-3xl uppercase tracking-widest text-white">Югами</span>
+                    <span class="font-bold text-2xl md:text-3xl uppercase tracking-widest text-white">Югами</span>
                 </a>
                 <p class="text-gray-400 font-light text-sm mb-6">Сучасна база відпочинку для комфортного сімейного відпочинку біля моря.</p>
                 <div class="flex items-center justify-center md:justify-start gap-4">
@@ -337,34 +436,34 @@
 <div id="menu-overlay" class="fixed inset-0 bg-black/50 z-40 opacity-0 pointer-events-none backdrop-blur-sm transition-all duration-500"></div>
 
 <div id="side-menu" class="fixed top-0 right-0 h-full w-full sm:w-100 bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-500 ease-in-out flex flex-col">
-    <div class="flex justify-end p-6 border-b border-gray-100">
-        <button id="close-menu" class="text-gray-400 hover:text-black transition-colors focus:outline-none">
+    <div class="flex justify-end p-4 md:p-6 border-b border-gray-100">
+        <button id="close-menu" class="text-gray-400 hover:text-black transition-colors focus:outline-none p-2">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
         </button>
     </div>
 
-    <div class="flex flex-col px-10 py-8 gap-8">
-        <a href="#about" class="menu-link text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Про нас</a>
-        <a href="#rooms" class="menu-link text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Номери</a>
-        <a href="#services" class="menu-link text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Інфраструктура</a>
-        <a href="#contacts" class="menu-link text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Контакти</a>
+    <div class="flex flex-col px-6 md:px-10 py-6 md:py-8 gap-6 md:gap-8 overflow-y-auto">
+        <a href="#about" class="menu-link text-lg md:text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Про нас</a>
+        <a href="#rooms" class="menu-link text-lg md:text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Номери</a>
+        <a href="#services" class="menu-link text-lg md:text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Інфраструктура</a>
+        <a href="#contacts" class="menu-link text-lg md:text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Контакти</a>
 
         <hr class="border-gray-200 my-2">
 
-        <div class="mt-4 flex flex-col gap-3">
-            <span class="block text-xs text-gray-400 uppercase tracking-widest mb-1">Бронювання по телефону:</span>
+        <div class="mt-2 md:mt-4 flex flex-col gap-3">
+            <span class="block text-[10px] md:text-xs text-gray-400 uppercase tracking-widest mb-1">Бронювання по телефону:</span>
 
-            <a href="tel:+380661799107" class="block text-2xl font-bold text-blue-900 hover:text-blue-700 transition-colors w-fit">
+            <a href="tel:+380661799107" class="block text-xl md:text-2xl font-bold text-blue-900 hover:text-blue-700 transition-colors w-fit">
                 +38 (066) 179-91-07
             </a>
 
-            <a href="tel:+380671857460" class="block text-2xl font-bold text-blue-900 hover:text-blue-700 transition-colors w-fit">
+            <a href="tel:+380671857460" class="block text-xl md:text-2xl font-bold text-blue-900 hover:text-blue-700 transition-colors w-fit">
                 +38 (067) 185-74-60
             </a>
 
-            <a href="tel:+380686705043" class="block text-2xl font-bold text-blue-900 hover:text-blue-700 transition-colors w-fit">
+            <a href="tel:+380686705043" class="block text-xl md:text-2xl font-bold text-blue-900 hover:text-blue-700 transition-colors w-fit">
                 +38 (068) 670-50-43
             </a>
         </div>
