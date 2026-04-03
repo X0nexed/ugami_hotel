@@ -4,7 +4,9 @@
   "description": "Веб-сайт (лэндинг) для базы отдыха **«Югами»**, расположенной в Грибовке (Одесская область). Проект демонстрирует инфраструктуру отеля, меню ресторана и геолокацию.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -20,10 +22,10 @@
   "devDependencies": {
     "autoprefixer": "^10.4.27",
     "postcss": "^8.5.8",
-    "tailwindcss": "^4.2.2",
     "vite": "^8.0.3"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.2.2"
+    "@tailwindcss/vite": "^4.2.2",
+    "tailwindcss": "^4.2.2"
   }
 }

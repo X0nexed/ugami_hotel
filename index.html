@@ -1,11 +1,299 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/style.css">
-    <title>Title</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Hotel Ugami</title>
 </head>
-<body>
+<body class="bg-gray-50 font-sans antialiased text-gray-800" style="opacity: 0; transition: opacity 0.4s ease-in-out;">
 
+<nav class="bg-white border-b border-gray-200 shadow-sm relative z-40">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-24">
+
+            <a href="#" class="flex items-center gap-4">
+                <img src="/icon.jpg" alt="Югами" class="w-20 h-20 object-contain">
+                <span class="font-bold text-2xl text-blue-900 tracking-widest uppercase">Югами</span>
+            </a>
+
+            <button id="navbar-toggle" class="flex items-center gap-2 p-2 text-gray-800 hover:text-blue-600 transition-colors focus:outline-none group">
+                <span class="hidden sm:block font-medium tracking-widest text-sm uppercase group-hover:text-blue-600">Меню</span>
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+</nav>
+
+<header class="relative h-screen flex items-center justify-center -mt-24 pt-24 overflow-hidden">
+    <div class="absolute inset-0 z-0 bg-gray-900">
+        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=2080&auto=format&fit=crop" alt="Югами Резорт" class="w-full h-full object-cover opacity-60">
+    </div>
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+        <h1 class="text-5xl md:text-7xl font-bold text-white tracking-wider uppercase mb-6 drop-shadow-lg">Югами</h1>
+        <p class="text-xl md:text-2xl text-white/90 font-light mb-10 tracking-wide drop-shadow-md">Сучасний відпочинок біля моря у Грибівці</p>
+        <a href="#rooms" class="inline-block bg-white text-blue-900 font-bold tracking-widest uppercase text-sm px-10 py-4 hover:bg-blue-900 hover:text-white transition-colors duration-300">
+            Переглянути номери
+        </a>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="py-24 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+        <div class="flex flex-col md:flex-row gap-16 items-center">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-3xl font-light text-blue-900 mb-6 uppercase tracking-widest">Про нас</h2>
+                <div class="space-y-4 text-gray-600 font-light leading-relaxed">
+                    <p>Двоповерхова будівля бази відпочинку збудована за проєктом, що втілює сучасний підхід до дизайнерського оформлення. База відпочинку "Югами" орієнтована на надання послуг для комфортного відпочинку біля моря, сімейного відпочинку, відпочинку з дітьми.</p>
+                    <p>На території курорту Грибівка ми пропонуємо басейн 14х4 м з підігрівом, де працює бар. В готелі все обладнання нове, внутрішнє та зовнішнє оформлення виконане в європейському стилі.</p>
+                    <p>Для дітей передбачено два безпечних дитячих майданчики — один під вікнами готелю, інший просто на піску біля моря. Громадський порядок на території бази та пляжу знаходиться під постійним контролем охорони.</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop" alt="Інтер'єр Югами" class="w-full h-auto shadow-xl">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="py-24 bg-gray-50 border-t border-b border-gray-200">
+    <div class="container mx-auto px-4 max-w-6xl">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-light text-blue-900 uppercase tracking-widest">Інфраструктура & Сервіс</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="bg-white p-8 shadow-sm">
+                <h3 class="text-xl font-medium text-gray-800 mb-4 uppercase tracking-wider text-center">Басейни</h3>
+                <ul class="space-y-3 text-gray-600 font-light text-center">
+                    <li>Великий басейн (14х4 м) з підігрівом</li>
+                    <li>Дитячий басейн</li>
+                    <li>Бар біля басейну</li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 shadow-sm">
+                <h3 class="text-xl font-medium text-gray-800 mb-4 uppercase tracking-wider text-center">Для дітей</h3>
+                <ul class="space-y-3 text-gray-600 font-light text-center">
+                    <li>Майданчик для малюків біля готелю</li>
+                    <li>Майданчик на піску біля моря</li>
+                    <li>Сімейний відпочинок</li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 shadow-sm">
+                <h3 class="text-xl font-medium text-gray-800 mb-4 uppercase tracking-wider text-center">Сервіс</h3>
+                <ul class="space-y-3 text-gray-600 font-light text-center">
+                    <li>Безкоштовна автостоянка</li>
+                    <li>Охорона території та пляжу</li>
+                    <li>Кафе-бар (дод. плата)</li>
+                    <li>Трансфер (дод. плата)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="rooms" class="py-24 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-light text-blue-900 uppercase tracking-widest mb-4">Наші номери</h2>
+            <p class="text-gray-500 max-w-2xl mx-auto font-light">Просторі, світлі кімнати підвищеного комфорту. Стильний інтер'єр та ретельно підібрані меблі створюють атмосферу затишку.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div class="group cursor-pointer relative overflow-hidden bg-gray-100">
+                <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" alt="2-х місний номер">
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                    <h3 class="text-2xl text-white font-medium tracking-wider">2-х місний номер</h3>
+                </div>
+            </div>
+            <div class="group cursor-pointer relative overflow-hidden bg-gray-100">
+                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1974&auto=format&fit=crop" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" alt="3-х місний номер">
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                    <h3 class="text-2xl text-white font-medium tracking-wider">3-х місний номер</h3>
+                </div>
+            </div>
+            <div class="group cursor-pointer relative overflow-hidden bg-gray-100">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" alt="4-х місний номер">
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                    <h3 class="text-2xl text-white font-medium tracking-wider">4-х місний номер</h3>
+                </div>
+            </div>
+            <div class="group cursor-pointer relative overflow-hidden bg-gray-100">
+                <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1974&auto=format&fit=crop" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" alt="5-х місний номер">
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                    <h3 class="text-2xl text-white font-medium tracking-wider">5-х місний номер</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-blue-50 p-8 md:p-12">
+            <h3 class="text-xl font-medium text-blue-900 mb-6 uppercase tracking-wider text-center">Комплектація кожного номера:</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8 text-gray-700 font-light">
+                <ul class="space-y-2 list-disc list-inside">
+                    <li>Гардеробна / прихожа</li>
+                    <li>Кімната для відпочинку</li>
+                    <li>Санвузол (душ, унітаз, гаряча вода)</li>
+                    <li>Кухонний куток (в деяких номерах)</li>
+                    <li>Двоспальне ліжко</li>
+                </ul>
+                <ul class="space-y-2 list-disc list-inside">
+                    <li>Диван (додатково у 3-місному)</li>
+                    <li>Комод, трюмо, шафа</li>
+                    <li>Приліжкові тумбочки</li>
+                    <li>Кондиціонер</li>
+                    <li>Великий холодильник</li>
+                </ul>
+                <ul class="space-y-2 list-disc list-inside">
+                    <li>TV із супутниковою антеною</li>
+                    <li>Електрочайник</li>
+                    <li>Посуд</li>
+                    <li>Комплект рушників</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Location Map -->
+<section id="location" class="w-full h-96 relative bg-gray-200">
+    <iframe
+        src="https://maps.google.com/maps?q=Югами,%20Грибівка,%20Одеська%20область&t=&z=16&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="absolute inset-0 w-full h-full grayscale-[0.3] contrast-[1.1] opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+    </iframe>
+</section>
+
+<!-- Footer / Contacts -->
+<footer id="contacts" class="bg-gray-900 text-white py-16">
+    <div class="container mx-auto px-4 max-w-6xl">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+
+            <div>
+                <a href="#" class="inline-flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 rounded-full overflow-hidden shadow-sm flex items-center justify-center flex-shrink-0">
+                        <img src="/icon.jpg" alt="Югами" class="w-full h-full object-cover scale-[1.445]">
+                    </div>
+                    <span class="font-bold text-3xl uppercase tracking-widest text-white">Югами</span>
+                </a>
+                <p class="text-gray-400 font-light text-sm mb-6">Сучасна база відпочинку для комфортного сімейного відпочинку біля моря.</p>
+                <div class="flex items-center justify-center md:justify-start gap-4">
+                    <a href="https://instagram.com/ugami_odesa" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <a href="https://tiktok.com/@ugami_odesa" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <span class="sr-only">TikTok</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-medium mb-6 uppercase tracking-wider">Контакти</h4>
+                <div class="space-y-3 font-light text-gray-300">
+                    <a href="tel:+380661799107" class="block hover:text-white transition-colors">+38 (066) 179-91-07</a>
+                    <a href="tel:+380671857460" class="block hover:text-white transition-colors">+38 (067) 185-74-60</a>
+                    <a href="tel:+380686705043" class="block hover:text-white transition-colors">+38 (068) 670-50-43</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-medium mb-6 uppercase tracking-wider">Адреса</h4>
+                <address class="font-light text-gray-300 not-italic leading-relaxed">
+                    вул. Приморська, 16<br>
+                    Грибівка<br>
+                    Одеська область, 67842
+                </address>
+            </div>
+
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 font-light">
+            <div>&copy; <span id="year"></span> База відпочинку "Югами". Всі права захищені.</div>
+            <div>Розробка проєкту: <a href="https://github.com/X0nexed" target="_blank" class="text-gray-400 hover:text-white transition-colors font-medium tracking-wide">Xonex</a></div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<div id="menu-overlay" class="fixed inset-0 bg-black/50 z-40 opacity-0 pointer-events-none backdrop-blur-sm transition-all duration-500"></div>
+
+<div id="side-menu" class="fixed top-0 right-0 h-full w-full sm:w-100 bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-500 ease-in-out flex flex-col">
+    <div class="flex justify-end p-6 border-b border-gray-100">
+        <button id="close-menu" class="text-gray-400 hover:text-black transition-colors focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+
+    <div class="flex flex-col px-10 py-8 gap-8">
+        <a href="#about" class="menu-link text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Про нас</a>
+        <a href="#rooms" class="menu-link text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Номери</a>
+        <a href="#services" class="menu-link text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Інфраструктура</a>
+        <a href="#contacts" class="menu-link text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Контакти</a>
+
+        <hr class="border-gray-200 my-2">
+
+        <div class="mt-4 flex flex-col gap-3">
+            <span class="block text-xs text-gray-400 uppercase tracking-widest mb-1">Бронювання по телефону:</span>
+
+            <a href="tel:+380661799107" class="block text-2xl font-bold text-blue-900 hover:text-blue-700 transition-colors w-fit">
+                +38 (066) 179-91-07
+            </a>
+
+            <a href="tel:+380671857460" class="block text-2xl font-bold text-blue-900 hover:text-blue-700 transition-colors w-fit">
+                +38 (067) 185-74-60
+            </a>
+
+            <a href="tel:+380686705043" class="block text-2xl font-bold text-blue-900 hover:text-blue-700 transition-colors w-fit">
+                +38 (068) 670-50-43
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    const toggleBtn = document.getElementById('navbar-toggle');
+    const closeBtn = document.getElementById('close-menu');
+    const sideMenu = document.getElementById('side-menu');
+    const overlay = document.getElementById('menu-overlay');
+    const menuLinks = document.querySelectorAll('.menu-link');
+    function openMenu() {
+        sideMenu.classList.remove('translate-x-full');
+        overlay.classList.remove('opacity-0', 'pointer-events-none');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+        sideMenu.classList.add('translate-x-full');
+        overlay.classList.add('opacity-0', 'pointer-events-none');
+        document.body.style.overflow = '';
+    }
+    toggleBtn.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+    menuLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+</script>
+<script type="module" src="/Main.js"></script>
 </body>
 </html>
