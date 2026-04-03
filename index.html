@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="manifest" href="./site.webmanifest">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Hotel Ugami</title>
 </head>
 <body class="bg-gray-50 font-sans antialiased text-gray-800" style="opacity: 0; transition: opacity 0.4s ease-in-out;">
@@ -20,7 +20,7 @@
         <div class="flex justify-between items-center h-20 md:h-24">
 
             <a href="#" class="flex items-center gap-2 md:gap-4">
-                <img src="./icon.jpg" alt="Югами" class="w-16 h-16 md:w-20 md:h-20 object-contain">
+                <img src="/icon.jpg" alt="Югами" class="w-16 h-16 md:w-20 md:h-20 object-contain">
                 <span class="font-bold text-xl md:text-2xl text-blue-900 tracking-widest uppercase">Югами</span>
             </a>
 
@@ -168,11 +168,23 @@
                             </div>
                         </div>
                         <div class="min-w-full h-full snap-center cursor-pointer group/img relative" onclick="openLightbox(this.querySelector('img').src)">
-                            <img src="/img/infrontofrhehotel2.jpg" alt="Сервіс 2" class="w-full h-full object-cover">
+                            <img src="/img/bar.jpg" alt="Кафе-бар" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
                                 <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
                             </div>
                         </div>
+
+                        <!-- Щоб додати нові фотографії, скопіюйте блок нижче і розкоментуйте його.
+                             Також не забудьте додати ще один <div ... bg-white shadow></div> до блоку з крапками внизу -->
+                        <!--
+                        <div class="min-w-full h-full snap-center cursor-pointer group/img relative" onclick="openLightbox(this.querySelector('img').src)">
+                            <img src="/img/your-new-photo.jpg" alt="Нове фото" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                            </div>
+                        </div>
+                        -->
+
                     </div>
                     <button onclick="document.getElementById('slider-3').scrollBy({left: -300, behavior: 'smooth'})" class="hidden md:block absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1 rounded-full shadow-md opacity-0 group-hover/slider:opacity-100 transition-opacity focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
@@ -194,91 +206,6 @@
                         <li>Трансфер (дод. плата)</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Restaurant Menu Section -->
-<section id="restaurant" class="py-16 md:py-24 bg-white border-b border-gray-200">
-    <div class="container mx-auto px-4 max-w-4xl">
-        <div class="text-center mb-10 md:mb-16">
-            <h2 class="text-2xl md:text-3xl font-light text-blue-900 uppercase tracking-widest mb-4">Меню ресторану</h2>
-            <p class="text-sm md:text-base text-gray-500 font-light">Насолоджуйтесь свіжими стравами місцевої та європейської кухні у нашому кафе-барі.</p>
-        </div>
-
-        <div class="space-y-8 md:space-y-12">
-            <!-- Сніданки -->
-            <div>
-                <h3 class="text-xl text-gray-800 border-b border-gray-200 pb-2 mb-4 font-medium uppercase tracking-wider">Сніданки</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4 font-light text-gray-700">
-                    <div class="flex justify-between items-baseline">
-                        <span>Англійський сніданок з беконом</span>
-                        <span class="text-blue-900 font-medium">180 ₴</span>
-                    </div>
-                    <div class="flex justify-between items-baseline">
-                        <span>Омлет з овочами та сиром</span>
-                        <span class="text-blue-900 font-medium">140 ₴</span>
-                    </div>
-                    <div class="flex justify-between items-baseline">
-                        <span>Сирники зі сметаною та джемом</span>
-                        <span class="text-blue-900 font-medium">150 ₴</span>
-                    </div>
-                    <div class="flex justify-between items-baseline">
-                        <span>Вівсяна каша з фруктами</span>
-                        <span class="text-blue-900 font-medium">110 ₴</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Основні страви -->
-            <div>
-                <h3 class="text-xl text-gray-800 border-b border-gray-200 pb-2 mb-4 font-medium uppercase tracking-wider">Основні страви</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4 font-light text-gray-700">
-                    <div class="flex justify-between items-baseline">
-                        <span>Стейк зі свинини з картоплею фрі</span>
-                        <span class="text-blue-900 font-medium">320 ₴</span>
-                    </div>
-                    <div class="flex justify-between items-baseline">
-                        <span>Курячий шашлик</span>
-                        <span class="text-blue-900 font-medium">250 ₴</span>
-                    </div>
-                    <div class="flex justify-between items-baseline">
-                        <span>Риба на грилі з лимоном</span>
-                        <span class="text-blue-900 font-medium">380 ₴</span>
-                    </div>
-                    <div class="flex justify-between items-baseline">
-                        <span>Паста Карбонара</span>
-                        <span class="text-blue-900 font-medium">210 ₴</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Напої -->
-            <div>
-                <h3 class="text-xl text-gray-800 border-b border-gray-200 pb-2 mb-4 font-medium uppercase tracking-wider">Напої</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4 font-light text-gray-700">
-                    <div class="flex justify-between items-baseline">
-                        <span>Еспресо / Амерікано</span>
-                        <span class="text-blue-900 font-medium">50 ₴</span>
-                    </div>
-                    <div class="flex justify-between items-baseline">
-                        <span>Свіжовичавлений сік</span>
-                        <span class="text-blue-900 font-medium">90 ₴</span>
-                    </div>
-                    <div class="flex justify-between items-baseline">
-                        <span>Коктейль Мохіто</span>
-                        <span class="text-blue-900 font-medium">160 ₴</span>
-                    </div>
-                    <div class="flex justify-between items-baseline">
-                        <span>Крафтове пиво (0.5 л)</span>
-                        <span class="text-blue-900 font-medium">85 ₴</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-6">
-                <p class="text-xs text-gray-400 italic">* Ціни можуть змінюватися. Повний асортимент уточнюйте в барі.</p>
             </div>
         </div>
     </div>
@@ -466,8 +393,8 @@
 
             <div class="flex flex-col items-center md:items-start">
                 <a href="#" class="inline-flex items-center gap-4 mb-4 md:mb-6">
-                    <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden shadow-sm flex items-center justify-center flex-shrink-0">
-                        <img src="./icon.jpg" alt="Югами" class="w-full h-full object-cover scale-[1.445]">
+                    <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden shadow-sm flex items-center justify-center shrink-0">
+                        <img src="/icon.jpg" alt="Югами" class="w-full h-full object-cover scale-[1.445]">
                     </div>
                     <span class="font-bold text-2xl md:text-3xl uppercase tracking-widest text-white">Югами</span>
                 </a>
@@ -533,7 +460,6 @@
         <a href="#about" class="menu-link text-lg md:text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Про нас</a>
         <a href="#rooms" class="menu-link text-lg md:text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Номери</a>
         <a href="#services" class="menu-link text-lg md:text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Інфраструктура</a>
-        <a href="#restaurant" class="menu-link text-lg md:text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Ресторан</a>
         <a href="#contacts" class="menu-link text-lg md:text-xl text-gray-800 hover:text-blue-600 font-medium transition-colors uppercase tracking-widest">Контакти</a>
 
         <hr class="border-gray-200 my-2">
@@ -557,11 +483,11 @@
 </div>
 
 <!-- Lightbox Modal -->
-<div id="lightbox" class="fixed inset-0 z-[100] bg-black/95 hidden items-center justify-center opacity-0 transition-opacity duration-300">
+<div id="lightbox" class="fixed inset-0 z-100 bg-black/95 hidden items-center justify-center opacity-0 transition-opacity duration-300">
     <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white hover:text-gray-300 z-50 focus:outline-none">
         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path></svg>
     </button>
-    <img id="lightbox-img" src="" class="max-w-[90vw] max-h-[90vh] object-contain shadow-2xl rounded-sm">
+    <img id="lightbox-img" src="" alt="Детальне фото" class="max-w-[90vw] max-h-[90vh] object-contain shadow-2xl rounded-sm">
 </div>
 
 <script type="module" src="./Main.js"></script>
