@@ -30,8 +30,8 @@
 * **Кістяк:** HTML5, Semantic Markup
 * **Стилі:** Tailwind CSS (v4)
 * **Логіка:** JavaScript (ES6+)
-* **Збірка та розробка:** Vite ⚡️
-* **Деплой:** GitHub Pages (планується)
+* **Збірка та розробка:** Vite 
+* **Деплой:** GitHub Pages
 
 ## Локальний запуск (Development)
 
