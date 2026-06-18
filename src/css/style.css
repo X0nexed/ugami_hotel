@@ -3,3 +3,10 @@
 @theme {
     --font-logo: "Manrope", sans-serif;
 }
+.price-note {
+    text-align: center;
+    color: #718096;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 20px;
+}
