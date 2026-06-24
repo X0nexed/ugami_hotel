@@ -10,3 +10,15 @@
     font-style: italic;
     margin-top: 20px;
 }
+.pet-policy-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 0;
+}
+
+.pet-policy-notice {
+    font-size: 16px;
+    color: #3e5077;
+    font-style: italic;
+}
